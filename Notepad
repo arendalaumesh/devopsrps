@@ -7,3 +7,8 @@
   <h1>Docker Image Built & Pushed via Jenkins 🚀</h1>
 </body>
 </html>
+ FROM nginx:alpine
+
+COPY index.html /usr/share/nginx/html/index.html
+
+EXPOSE 80
